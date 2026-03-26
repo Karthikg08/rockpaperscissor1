@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    RPS Game
+  </title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  
+  <button class="helner" onclick="alert('have fun 😊');"> Rock Paper Scissor </button> <br>
+  
+  <button class="buttons-game js-button-rock"onclick=" playgame('rock')" > 
+    <img class="game-icon " src="images/rock-emoji.png" > </button>
+  <button class="buttons-game js-button-paper" onclick="playgame('paper')"> 
+    <img class="game-icon" src="images/paper-emoji.png" > </button>
+    <button class="buttons-game js-button-scissor" onclick=" playgame('scissor')"> 
+      <img class="game-icon" src="images/scissor-emoji.png" > </button> 
+      
+      
+  <!--<p>learn javascript stepbystep here</p>-->
+
+  <p class="js-result result-css"></p>
+  <p class="js-moves css-moves"></p>
+  <p class="js-score css-score"></p>
+  
+  
+  <button class="buttons-reset" onclick="
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;
+    scoreupdate();
+    resetscore();
+    ">Reset Score</button>
+    
+  
+  <button class="button-autoplay" onclick="autoplay()">autoplay</button>
+
+<script src="script.js"></script>
+
+</body>
